@@ -1,0 +1,57 @@
+To setup a VM from Vagrant you need to download vagrant into your OS:
+
+create a folder for Vagrant: (root folder permission required in case windows.)
+
+Run following commands:
+
+mkdir Vagrant
+
+cd Vagrant
+
+vagrant init image_name (like: generic/ubunbu2204)
+
+vagrant up
+
+vagrant destroy
+
+vagrant box remove generic/ubuntu2204 --provider=hyperv
+
+For running VMs and to extract VM IDs:
+vagrant global-status
+
+To remove 
+
+
+For UBUNTU:
+
+sudo apt-add-repository "deb [arch=amd64] https://apt.releases.hashicorp.com $(lsb_release -cs) main"
+sudo apt update
+sudo apt install vagrant -y
+
+#To show available boxes in your system:
+
+vagrant box list
+
+centos/7
+generic/ubuntu2204
+
+#To delete a VM:
+
+vagrant halt VM_ID
+
+
+#Basic Vagrant commands
+vagrant init [name [url]]
+vagrant up [name|id]
+vagrant status [name|id]
+vagrant halt [name|id]
+vagrant destroy [name|id]
+vagrant ssh [name|id]
+vagrant suspend [name|id]
+vagrant resume [name|id]
+
+
+
+
+
+
