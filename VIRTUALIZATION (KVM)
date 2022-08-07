@@ -1,15 +1,14 @@
-#grep -E -c "vmx|svm" /proc/cpuinfo
-
-# sudo apt install -y cpu-checker gcc-9-base gcc-9 libstdc++-9-dev libasan5 cpp-9 libgcc-9-dev msr-tools
-
-#sudo apt install -y qemu qemu-kvm libvirt-daemon bridge-utils virt-manager virtinst
-
-
 To check your CPU is VT enabled or not
 #grep vmx /proc/cpuinfo
 
+sudo apt install -y gcc-9-base gcc-9 libstdc++-9-dev libasan5 cpp-9 libgcc-9-dev msr-tools
+
+sudo apt install -y qemu qemu-kvm libvirt-daemon bridge-utils virt-manager virtinst
+
 To check KVM module is installed on machine or not
 #lsmod | grep kvm
+
+###FOR REDHAT/FEDORA###
 
 Packages to Install KVM
 # yum install libvirt qemu-kvm virt-manager -y

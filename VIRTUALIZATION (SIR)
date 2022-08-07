@@ -1,0 +1,14 @@
+grep vmx /proc/cpuinfo
+
+lsmod | grep kvm
+
+ISO Image Location:
+
+/var/lib/libvirt/images
+
+
+
+
+yum install libvirt
+yum qemu-kvm
+yum install virt-manager

@@ -1,0 +1,2 @@
+yum install system-config-kickstart
+yum install pykickstart
