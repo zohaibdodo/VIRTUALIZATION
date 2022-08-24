@@ -45,3 +45,6 @@ TO CREATE A VIRTUAL MACHINE:
 sudo virt-install --name=deepin-vm --os-variant=Debian10 --vcpu=2 --ram=2048 --graphics spice --location=/home/Downloads/deepin-20Beta-desktop-amd64.iso --network bridge:vibr0 
 
 osinfo-query os
+
+
+sudo apt-get -y install qemu-kvm libvirt-bin ubuntu-vm-builder bridge-utils
