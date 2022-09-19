@@ -15,6 +15,7 @@ Download executable from vagrant web site and install it.
 $mkdir Vagrant
 $cd Vagrant
 $vagrant init image_name (like: generic/ubunbu2204)
+$vagrant init generic/ubunbu2204
 $vagrant up
 
 #VAGRANT BOX REMOVE:
