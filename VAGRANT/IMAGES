@@ -1,1 +1,3 @@
 generic/fedora36
+
+vagrant init generic/ubuntu2204
