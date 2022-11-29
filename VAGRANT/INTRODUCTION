@@ -8,10 +8,10 @@ $sudo apt install vagrant -y
 
 #Create a folder for Vagrant: (root folder permission required in case windows.)
 
-$mkdir Vagrant
-$cd Vagrant
-$vagrant init generic/ubunbu2204
-$vagrant up
+mkdir Vagrant
+cd Vagrant
+vagrant init generic/ubunbu2204
+vagrant up
 
 #VAGRANT BOX REMOVE:
 
