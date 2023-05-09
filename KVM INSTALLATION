@@ -2,8 +2,7 @@ grep -Eoc '(vmx|svm)' /proc/cpuinfo
 kvm-ok
 
 sudo apt update
-sudo apt -y install bridge-utils cpu-checker libvirt-clients libvirt-daemon qemu qemu-kvm
-sudo apt install qemu-kvm libvirt-daemon-system libvirt-clients bridge-utils virtinst virt-manager
+sudo apt -y install bridge-utils libvirt-clients libvirt-daemon qemu qemu-kvm libvirt-daemon-system virtinst virt-manager
 
 sudo adduser $USER libvirt
 sudo adduser $USER kvm
