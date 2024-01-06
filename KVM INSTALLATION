@@ -20,4 +20,3 @@ sudo virt-install --name ubuntu-guest --os-variant ubuntu20.04 --vcpus 2 --ram 2
 TO CHECK RUNNING VMs MACHINES:
 
 virsh list --all
-
