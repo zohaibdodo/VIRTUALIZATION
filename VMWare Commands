@@ -1,0 +1,3 @@
+#To add port group
+esxcli network vswitch standard portgroup add --portgroup-name="Network_name" --vswitch-name=vSwitch0
+esxcli network vswitch standard portgroup set --portgroup-name=Network_name --vlan-id=34

@@ -1,0 +1,18 @@
+To join Active Directory:
+
+/opt/likewise/bin/domainjoin-cli join lab1.com administrator
+
+To Link Vcenters on Host B:
+
+cmsso-util domain-repoint --mode pre-check --src-emb-admin administrator --replication-partner-fqdn vcenter41.lab1.com --replication-partner-admin administrator --dest-domain-name vsphere.local
+
+From <https://www.sysadmintutorials.com/join-vcenters-enhanced-linked-mode/> 
+
+
+cmsso-util domain-repoint --mode execute --src-emb-admin administrator --replication-partner-fqdn vcenter41.lab1.com --replication-partner-admin administrator --dest-domain-name vsphere.local
+
+From <https://www.sysadmintutorials.com/join-vcenters-enhanced-linked-mode/> 
+
+cmsso-util unregister --node-pnid Node_C_FQDN --username Node_B_sso_administrator@sso_domain.com --passwd Node_B_sso_adminuser_password
+
+From <https://knowledge.broadcom.com/external/article/370062/splitting-enhanced-linked-mode-elm.html> 
